@@ -1,0 +1,21 @@
+def user_strip(self, s:str) -> list:
+        print("s is", s)
+        left = 0
+        right = len(s)-1
+        while left <= right and s[left] == " ":
+            left += 1
+        while left <= right and s[right] == " ":
+            right -= 1
+        out_lst = list()
+        while left <= right:
+            # add all non-space characters in a list
+            if s[left] != " ":
+                out_lst.append(s[left])
+            # if previous character is not a space then add that space else ignore
+            elif s[left-1] != " ":
+                out_lst.append(s[left])
+            left += 1
+        return out_lst
+        
+    s = "   the sky   is blue  "
+    o/p = [t,h,e,,s,k,y,,i,s,b,l,u,e]
