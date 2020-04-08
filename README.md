@@ -1,2 +1,2 @@
-# MicroSoft-Questions
+# String manupulation
 Frequently Asked Questions
